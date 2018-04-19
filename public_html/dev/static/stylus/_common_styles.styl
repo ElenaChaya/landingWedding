@@ -1,0 +1,201 @@
+.sandwich
+    position relative
+    display inline-block
+    vertical-align middle
+    margin-right 15px
+    width 50px
+    height 50px
+    border 2px solid #fff
+    border-radius 50px
+
+    &.active
+        .sandwich-line--top
+            top 21px
+            transform rotate(45deg)
+
+        .sandwich-line--middle
+            opacity 0
+
+        .sandwich-line--bottom
+            top 21px 
+            transform rotate(-45deg)
+
+
+.sandwich-line
+    position absolute
+    left 50%
+    margin-left -12.5px
+    display block
+    width 25px
+    height 4px
+    background-color #fff
+    transition all linear .5s
+
+.sandwich-line--top
+    top 13px
+
+.sandwich-line--middle
+    top 21px
+    opacity 1
+
+.sandwich-line--bottom
+    top 29px    
+
+.g-btn
+    display inline-block
+    height 50px
+    line-height 48px
+    padding 0 30px
+    border 1px solid #fff
+    border-radius 30px
+    color #fff
+    background-color mainColor
+    cursor pointer
+    transition all linear .3s
+    
+
+    &:hover
+        background-color #fff
+        color mainColor
+        border-color mainColor
+
+
+    &.g-btn--small
+        height 30px
+        line-height 28px
+        padding 0 20px
+        border-radius 20px
+
+    &.g-btn--pdf
+        position relative
+        padding-left 45px
+        
+        &:before
+            content ''
+            position absolute
+            left 20px
+            top 13px
+            display block
+            width 19px
+            height 18px
+            background url('../img/general/pdf-btn.png') 0 0 no-repeat
+        
+        &:hover
+
+            &:before
+                background url('../img/general/pdf-btn-hover.png') 0 0 no-repeat
+
+
+
+.g-section-title
+    margin-bottom 30px
+    text-align center
+    font-size 42px
+    color mainColor
+    font-family titleFont
+
+    &.g-section-title--white
+        color #fff
+
+.instagram-text
+    position relative
+    display inline-block
+    font-size 24px
+    font-family boldFont
+    color mainColor
+
+    &:before
+        content ''
+        display inline-block
+        vertical-align middle
+        margin-right 15px
+        width 35px
+        height 35px
+        background url('../img/content/instagram.png') 0 0 no-repeat
+
+.form
+    display flex
+    align-items center
+    padding 50px 25px 35px
+    max-width 360px
+    color mainColor
+    border-radius 15px
+    background-color #fff
+    text-align center
+
+
+
+.form-title
+    margin-bottom 30px
+    font-size 28px
+    line-height 1.3
+
+.form-group
+    position relative
+    margin-bottom 25px
+    
+    &.form-group--phone
+        margin-bottom 40px
+
+.form-group--icon    
+    &:before
+        content ''
+        position absolute
+        top 12px
+        left 10px
+        display block
+        width 15px
+        height 15px
+
+    
+&.form-group--phone
+
+    &:before
+        background url('../img/svg/phone-grey(Zurb).svg') 0 0 no-repeat
+        background-size 100%
+
+&.form-group--name
+    
+    &:before
+        background url('../img/svg/user(Dave Gandy).svg') 0 0 no-repeat
+        background-size 100%
+    
+
+.g-input
+    width 100%
+    height 40px
+    line-height 38px
+    padding 0 10px 0 30px
+    border 1px solid grayColor
+    border-radius 5px
+    margin-bottom 5px
+
+    &.error
+        border-color red
+
+.success-form
+    position relative
+    padding-top 180px
+    display none
+    font-size 28px
+    line-height 1.2
+
+    &.success-show
+        display block
+
+        &:before
+            content ''
+            display block
+            width 180px
+            height 180px
+            position absolute
+            top -10px
+            left 50%
+            margin-left -90px
+            background url('../img/general/success-form.jpg') 0 0 no-repeat
+            background-size 100%
+
+.success-text__bold
+    display block
+    font-family boldFont
+    

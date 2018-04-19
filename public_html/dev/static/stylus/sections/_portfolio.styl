@@ -1,0 +1,106 @@
+.portfolio
+    height 1160px
+    background url('../img/general/portfolio-bg.jpg') 0 0 no-repeat
+    background-size cover
+    
+    &:before 
+            content ''
+            display block
+            position absolute
+            top -19px
+            left 0
+            right 0
+            height 21px
+            background url('../img/general/wave-top-portfolio.png') 0 0 no-repeat
+            background-size cover
+            z-index 1
+            
+
+    &:after 
+            content ''
+            display block
+            position absolute
+            bottom -17px
+            left 0
+            right 0
+            height 19px
+            background url('../img/general/wave-bottom-portfolio2.png') 0 0 repeat-x
+            z-index 1
+            
+
+.portfolio-item__wrap   
+    width 100%
+    max-width 975px
+    margin 0 auto
+
+.portfolio-item__line
+    display flex
+
+.portfolio-item__center
+    position relative
+    display flex
+    flex-wrap wrap
+
+.portfolio-item
+    position relative
+    width 292px
+    height 229px
+    cursor pointer
+    background-size cover
+
+    &.portfolio-item--width
+        width 390px
+
+    &.portfolio-item--height
+        position absolute
+        right 1px
+        top 0
+        height 460px
+
+    
+    &:hover
+        
+        .portfolio-item__descr
+            opacity 1
+
+.portfolio-item__search
+    position absolute
+    right 10px
+    bottom 10px
+    width 25px
+    height 25px
+    background-color mainColor
+    border 1px solid #fff
+    border-radius 50%
+    z-index 1
+
+    &:after
+        content ''
+        position absolute
+        display block
+        width 13px
+        height 13px
+        top 50%
+        left 50%
+        transform translate(-50%,-50%)
+        background url('../img/content/portfolio/search_icon.png') 0 0 no-repeat
+        background-size 100%
+        
+.portfolio-item__descr
+    position absolute
+    bottom 0 
+    left 0
+    right 0
+    padding 15px 40px 15px 10px
+    background-color mainColor
+    color #fff
+    text-align right
+    opacity 0
+    transition all linear .2s
+
+.portfolio-instagram
+    margin-top 20px
+    text-align center
+    font-size 28px
+    color mainColor
+   
